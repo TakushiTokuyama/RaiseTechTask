@@ -1,6 +1,6 @@
 package twoWeek;
-
-interface work{					//Workふるまい
+//Workふるまい
+interface work{					
 
 	String hard = "難しい";
 	String easy = "簡単";
@@ -8,15 +8,15 @@ interface work{					//Workふるまい
 	void overtime();
 	void LeaveEarly();
 }
-
-interface salary{				//Salaryふるまい
+//Salaryふるまい
+interface salary{				
 
 	int money = 1000;
 
 	String get(String name , int hour );
 }
-
-class WorkplaceCommunication implements work , salary{      //⑧WorkplaceCommunication(職場)実装
+//⑧WorkplaceCommunication(職場)実装
+class WorkplaceCommunication implements work , salary{
 
 	public void overtime() {
 	     System.out.println("今日は"+hard+"ので残業です。");

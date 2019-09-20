@@ -1,38 +1,38 @@
 package twoWeek;
-
-	interface Communication{               //⑥Communicationというインターフェース
+	//⑥Communicationというインターフェース
+	interface Communication{ 
 
 		String morning = "おはよう";
 		String noon = "こんにちは";
 		String night = "こんばんは";
 
 		void greeting();
-
 	}
 
-	class Morning implements Communication{	//朝のふるまい
+	//朝のふるまい
+	class Morning implements Communication{
 
 		public void greeting() {
 			System.out.println(morning);
 		}
 	}
-
-	class Afternoon implements Communication{	//昼のふるまい
+	//昼のふるまい
+	class Afternoon implements Communication{	
 
 		public void greeting() {
 			System.out.println(noon);
 		}
 
 	}
-
-	class Night implements Communication{		//夜のふるまい
+	//夜のふるまい
+	class Night implements Communication{		
 
 		public void greeting() {
 			System.out.println(night);
 		}
 	}
-
-	interface Birthday{					//お誕生日プレゼントインターフェース
+	//お誕生日プレゼントインターフェース
+	interface Birthday{				
 
 		String present = "ケーキ";
 		String present1 = "チョコ";
@@ -40,8 +40,8 @@ package twoWeek;
 		String birthday(String name);
 
 	}
-
-	class Present implements Birthday{			//実装
+	//実装
+	class Present implements Birthday{
 
 		public String birthday(String name) {
 
@@ -57,9 +57,10 @@ package twoWeek;
 
 	}
 
+	//⑦greetというメソッド
 	class Greet{
 
-		static void greet(String greeting , String name){		//⑦greetというメソッド
+		static void greet(String greeting , String name){		
 
 			System.out.println(name +"さん"+ greeting);
 
@@ -68,15 +69,16 @@ package twoWeek;
 	}
 
 	public class Sample3 {
+
 	public static void main(String[] args) {
 
 		Morning m = new Morning();
 		Afternoon a = new Afternoon();
 		Night n = new Night();
 
-		m.greeting();							//朝のあいさつ
-		a.greeting();							//昼のあいさつ
-		n.greeting();							//夜のあいさつ
+		m.greeting();//朝のあいさつ
+		a.greeting();//昼のあいさつ
+		n.greeting();//夜のあいさつ
 
 		Present p = new Present();
 
@@ -85,8 +87,8 @@ package twoWeek;
 
 		System.out.println(answer);
 		System.out.println(answer1);
-
-		Greet.greet(Communication.noon , "yamada");		//⑨greetというメソッド内でHelloという言葉を受けたら、Helloと返す
+		//⑨greetというメソッド内でHelloという言葉を受けたら、Helloと返す
+		Greet.greet(Communication.noon , "yamada");
 
 	}
 
