@@ -1,6 +1,6 @@
 package twoWeek;
 
-	interface Communication{                   //⑥Communicationというインターフェース
+	interface Communication{               //⑥Communicationというインターフェース
 
 		String morning = "おはよう";
 		String noon = "こんにちは";
@@ -32,7 +32,7 @@ package twoWeek;
 		}
 	}
 
-	interface Birthday{						//お誕生日プレゼントインターフェース
+	interface Birthday{					//お誕生日プレゼントインターフェース
 
 		String present = "ケーキ";
 		String present1 = "チョコ";
