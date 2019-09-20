@@ -21,7 +21,7 @@ public class Sample2 {
 			System.out.println(classList.get(i));
 		}
 
-		////⑤String型のMapを作成
+		//⑤String型のMapを作成
 		Map<String , Integer> attendanceNumber = new HashMap<String , Integer>();
 
 			attendanceNumber.put("山田" ,  1);
