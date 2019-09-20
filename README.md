@@ -15,7 +15,7 @@ Sample1.java Method.java
 Sample2.java
 ⑤String型のListを作成、String型のMapを作成
 
-Sample3.java Method.java
+Sample3.java
 ⑥Communicationというインターフェース
 ⑦greetというメソッド
 ⑨greetというメソッド内でHelloという言葉を受けたら、Helloと返す
