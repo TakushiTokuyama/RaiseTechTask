@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>demo</title>
+
+<style>
+li {
+	list-style: none;
+}
+</style>
+</head>
+<body>
+	<p th:text="${msg}"></p>
+	<a href="/business/calc">計算</a>
+	<a href="/business/manage">業務管理</a>
+	<a href="/business/manage_form">業務管理登録</a>
+	<a href="/form">つぶやき</a>
+	<a href="/users/usersList">ユーザーリスト</a>
+	<a href="/users/login_form">新規登録</a>
+	<a href="/users/login">ログイン</a>
+
+</body>
+</html>

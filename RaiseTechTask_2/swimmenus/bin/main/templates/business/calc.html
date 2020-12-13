@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Insert title here</title>
+</head>
+<body>
+
+	<form action="/business/calc" method="post">
+		営業締め日を調べる。<br>
+		営業締め日は月の最後の日とする。<br>
+
+		年：<input name="year" size="3">
+		月：<input name="month" size="1">
+		日：<input name="day" size="1">
+
+		<input type="submit">
+	</form>
+
+<div th:if="${lastYear}"}>
+	<p th:text="|結果表示:${lastYear}年${lastMonth}月${lastDay}日です|" />
+</div>
+</body>
+</html>

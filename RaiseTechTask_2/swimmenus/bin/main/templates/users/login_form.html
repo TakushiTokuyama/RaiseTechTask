@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>新規登録</title>
+<style>
+li {
+	list-style: none;
+}
+</style>
+</head>
+<body>
+	<form action="/users/login_form" method="post" th:object="${formModel}">
+		<ul>
+			<li>email:<input type="text" name="email"></li>
+			<li>password:<input type="password" name="password"></li>
+			<li><input type="submit" value="登録">
+		</ul>
+	</form>
+
+	<a href="/">index</a>
+</body>
+</html>

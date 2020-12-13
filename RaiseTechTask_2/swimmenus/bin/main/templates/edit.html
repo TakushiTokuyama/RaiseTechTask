@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>編集画面</title>
+<style>
+li {
+	list-style: none;
+}
+</style>
+</head>
+<style>
+</style>
+</head>
+<body>
+	<h1 th:text="${title}">form page</h1>
+	<form method="post" action="/edit" th:object="${formModel}">
+		<input type="hidden" name="id" th:value="*{id}" />
+		<ul>
+			<li>名前:<input type="text" name="name" th:value="*{name}" /></li>
+			<li>メモ:<textarea name="menu" th:text="*{menu}"></textarea></li>
+			<li><input type="submit" /></li>
+		</ul>
+	</form>
+</body>
+</html>
